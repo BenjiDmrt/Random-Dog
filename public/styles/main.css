@@ -1,0 +1,54 @@
+:root {
+  --card-height: 65vh;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+
+body {
+  min-height: 100vh;
+  background: #212534;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: white;
+  font-family: "Titan One", cursive;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: var(--card-width);
+  height: var(--card-height);
+  padding: 3px;
+  position: relative;
+  border-radius: 6px;
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  flex-direction: column; 
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; 
+  object-position: top; 
+  border-radius: 10px;
+}
+
+footer {
+  color: white;
+  position: fixed; 
+  bottom: 0; 
+  left: 0;
+  width: 100%; 
+  text-align: center;
+  padding: 10px 0; 
+}
